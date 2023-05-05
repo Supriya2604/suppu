@@ -1,0 +1,43 @@
+class Queue
+    {
+        constructor(size)
+        {
+            this.front=-1;
+            this.rear=-1;
+            this.size=5;
+            this.arr=new Array();
+        }
+    enQueue(data)
+        {
+            if(this.front==null)
+            {
+                console.log("Queue is empty");
+            }
+            else
+            {
+                this.arr[(this.rear)++]=data;
+            }
+        }
+
+    deQueue()
+        {
+            if(this.front==null)
+            {
+                console.log("Queue is empty");
+            }
+            else
+            {
+                this.arr=[(this.front)--]=data;
+            }
+        }
+    display()
+        {
+            for(let i=0;i<=this.size-1;i++)
+                {
+                    console.log(this.arr[i]);
+                }
+        }
+    }
+var Q=new Queue();
+Q.enQueue(6);
+Q.display();
